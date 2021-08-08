@@ -1,0 +1,60 @@
+
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+   min-height: 100vh;
+  
+}
+
+
+.map-container {
+  order: 2;
+  width: 70vw;
+  min-height: 100vh;
+ 
+
+}
+
+.list {
+  order: 1;
+  width: 30vw;
+   min-height: 100vh;
+   background-color: rgb(230, 203, 219);
+   padding: 0.5rem;
+  
+
+}
+ a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
+.marker {
+  background-image: url("./assets/love-2.png") ; 
+  background-size: cover;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.romantic .mapboxgl-popup-content {
+  max-width: 250px;
+  box-shadow: 3px 3px 2px #dba2bd;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 0.75rem;
+  background-color: #f5c9de;
+  color: #79244d;
+}
+.romantic .mapboxgl-popup-content h3 {
+  font-weight: 600;
+}
+
+.romantic .mapboxgl-popup-tip {
+  border-top-color: #f5c9de;
+}
