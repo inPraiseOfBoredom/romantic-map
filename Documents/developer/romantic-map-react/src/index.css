@@ -1,31 +1,95 @@
+html {
+  font-family: 'Open Sans',  sans-serif;
+     font-size: 1rem;
+  word-spacing: 1px;
+  background-color: rgb(51,51,51);
+ 
+  
+  box-sizing: border-box;
 
-
+}
 .wrapper {
   display: flex;
   justify-content: space-between;
   width: 100vw;
-   min-height: 100vh;
+  
   
 }
-
 
 .map-container {
   order: 2;
-  width: 70vw;
-  min-height: 100vh;
- 
-
+  width: 66vw;
+ height: 125vh;
+  
 }
-
+#icons {
+  background-color: rgb(51,51,51);
+  color: #ebebeb;
+}
 .list {
   order: 1;
-  width: 30vw;
-   min-height: 100vh;
-   background-color: rgb(230, 203, 219);
+  width: 33vw;
+ color: #ebebeb;
+background-color: rgb(51,51,51);
    padding: 0.5rem;
-  
-
+   max-height: 125vh;
 }
+
+
+
+h2 {
+  color: #f38db8;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  line-height: 2rem;
+}
+
+.spot-title {
+  letter-spacing: -0.2px;
+  font-weight: 400;
+  padding-left: 0;
+}
+
+.spot-category {
+  color: #e24040;
+}
+
+@media only screen and (max-width: 900px) {
+  .map-container {
+    width: 50vw;
+  }
+
+  .list {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .map-container {
+    width: 35vw;
+  }
+
+  .list {
+    width: 75vw;
+  }
+}
+
+.spot {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0.6rem 0.4rem 0;
+  border-bottom: 1px dotted #ebebeb;
+}
+
+
+
+
+
+.favorite {
+  background-color: bisque;
+}
+
  a:link {
   text-decoration: none;
 }
@@ -57,4 +121,56 @@ a:visited {
 
 .romantic .mapboxgl-popup-tip {
   border-top-color: #f5c9de;
+}
+
+.favorite-button {
+
+padding : 0.35rem 1.1rem;
+border: 0.1rem solid #ebebeb;
+margin: 0 0.3rem 0.3rem 0;
+border-radius: 0.12rem;
+
+text-decoration: none;
+ font-weight: 300;
+ font-size: 1.1rem;
+ width: 7.5rem;
+ height: 6rem;
+ color: #ebebeb;
+ transition: all 0.2s;
+ background-color: rgb(51,51,51);
+
+}
+
+.favorite-button:hover {
+  color: rgb(51,51,51);
+  background-color: #ebebeb;
+}
+
+.heart-icon {
+  display: block;
+}
+
+.spot-title {
+  cursor: pointer;
+}
+
+
+
+#search-input {
+  border: none;
+  background: #f2f2f2;
+  padding: 0.7rem;
+  border-radius: 3px;
+  width: 200px;
+
+}
+
+#search-clear-button {
+  margin-left: 0.2rem;
+   border: none;
+  background: #f2f2f2;
+  padding: 0.7rem;
+  border-radius: 3px;
+  width: 80px;
+
 }

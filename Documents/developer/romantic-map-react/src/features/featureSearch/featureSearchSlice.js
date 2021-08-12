@@ -22,3 +22,5 @@ switch(action.type) {
       return searchTerm;
   }
 }
+
+export const selectSearchTerm = (state) => state.searchTerm;

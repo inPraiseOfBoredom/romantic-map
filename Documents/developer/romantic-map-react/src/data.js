@@ -49,7 +49,7 @@ export const spots = {
             },
             properties: {
               id: 4,
-              title: "Könneritzbrücke",
+              title: "Koenneritzbruecke",
               description: "A nice view to White Elster",
               category: "viewpoint"
             }
@@ -253,7 +253,7 @@ export const spots = {
             },
             properties: {
               id: 19,
-              title: "Südfriedhof",
+              title: "Suedfriedhof",
               description:
                 "Beautiful and peaceful piece of land for a nice walk",
               category: "nature"
@@ -324,6 +324,46 @@ export const spots = {
               description: "Beautiful piece of nature",
               category: "nature"
             }
+          },
+          {
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: [12.568646855231693, 51.32307414622084], 
+            },
+            properties: {
+              id: 25,
+              title: "Steinbruch Church",
+              description: "The church on the mountain at the former quarry",
+              category: "viewpoint"
+            }
+          },
+          {
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: [12.333098845526932,  51.328575371750006], 
+            },
+            properties: {
+              id: 26,
+              title: "Karl-Heine-Kanal",
+              description: "A small viewpoint at the canal in the middle of peaceful surrounding",
+              category: "viewpoint"
+            }
+          },
+          {
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: [12.33854632016123, 51.331755571392705], 
+            },
+            properties: {
+              id: 27,
+              title: "Nyanko Tee",
+              description: "A Japanese-inspired cafe with a great assortment of green tea",
+              category: "cafe"
+            }
           }
         ]
-      }
+      };
+

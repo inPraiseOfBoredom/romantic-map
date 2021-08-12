@@ -1,10 +1,13 @@
-import { div } from 'prelude-ls';
+
 import React from 'react';
-import { setSearchTerm , clearSearchTerm} from './featureSearchSlice';
+import { useSelector, useDispatch } from 'react-redux';
+import { setSearchTerm , clearSearchTerm, selectSearchTerm} from './featureSearchSlice';
+import searchIcon from '../../assets/search-solid.svg';
 
-export const SearchTerm = (props) => {
+export const SearchTerm = () => {
 
- const {searchTerm, dispatch} = props;
+ const searchTerm = useSelector(selectSearchTerm);
+ const dispatch = useDispatch();
 
  const onSearchChangeHandler = (e) => {
      const userInput = e.target.value;
@@ -17,9 +20,9 @@ const onClearSearchHandler = () => {
 
 return (
    <div id="search-container">
-       <img id='search-icon' />
+       
        <input 
-        id='search'
+        id='search-input'
         type="text"
         value={searchTerm}
         onChange={onSearchChangeHandler}
@@ -31,7 +34,7 @@ return (
          type='button'
          id="search-clear-button"
          >
-             <img />
+             Clear
              </button>
        )
        }
